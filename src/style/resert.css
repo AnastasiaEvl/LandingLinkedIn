@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #F7F9FB;
+    --font-family: "Gotham Pro",fantasy;
+    --font-size: 12px;
+    --line-height: 0.9rem;
+    --right-border: 1px solid #F4F4F4;
+    --font-color: #181818;
+    --hover-color: #0275B1;
+}
+li {
+   list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+p,h1 {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+.main{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 10rem;
+}
+.content{
+    width: 60%;
+}

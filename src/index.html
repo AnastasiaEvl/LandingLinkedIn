@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="./fonts/Gotham/stylesheet.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./style/resert.css" />
+    <link rel="stylesheet" href="./style/header.css" />
+    <link rel="stylesheet" href="./style/about.css" />
+    <link rel="stylesheet" href="./style/aside-bar.css" />
+    <title>LinkedIn</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header-box">
+        <div class="header">
+          <div class="logo">
+            <img
+              class="header__logo"
+              src="./icons/icon-linkedIn.svg"
+              alt="logo"
+            />
+          </div>
+          <div class="header__navs">
+            <a class="header__link" href="#">
+              <img
+                class="header__icon-wi-fi"
+                src="./icons/wi-fi.svg"
+                alt="icon"
+              />
+              <p>feed</p>
+            </a>
+            <a class="header__link" href="#">
+              <img class="header__icon" src="./icons/users.svg" alt="icon" />
+              <p>network</p>
+            </a>
+            <a class="header__link" href="#">
+              <img
+                class="header__icon"
+                src="./icons/briefcase.svg"
+                alt="icon"
+              />
+              <p>jobs</p>
+            </a>
+            <a class="header__icon-with-counter" href="#"
+              ><div class="counter"><p class="counter__num">1</p></div>
+              <img class="header__icon" src="./icons/message.svg" alt="icon" />
+              <p>chat</p></a
+            >
+            <a class="header__link" href="#">
+              <img class="header__icon" src="./icons/bell.svg" alt="icon" />
+              <p>notices</p>
+            </a>
+          </div>
+
+          <div class="header__input-block">
+            <button type="button"><img src="./icons/search.svg" alt="icon"/></button>
+            <input
+              class="header__input-search"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+          <div class="header__profile-block">
+            <a href="#">
+              <img class="header__profile-avatar" src="./icons/profile.svg"  alt="avatar"/>
+              <div class="header__profile-info">
+                <p class="header__profile-name">
+                  D. Kargaev <span class="header__profile-status">you</span>
+                </p>
+                <p class="header__profile-views">
+                  367 views today
+                  <span class="header__profile-statistic"
+                    >+32<img
+                      class="header__profile-arrow"
+                      src="./icons/strelka.svg"
+                      alt="arrow"
+                  /></span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="header__navs">
+            <a class="header__link" href="#">
+              <img class="header__icon" src="./icons/dots.svg" alt="icon"/>
+              <p>other</p></a
+            >
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="content">
+          <form class="about">
+            <label>
+              <header class="about__header">
+                <h1 class="about__header-title">new post</h1>
+              </header>
+              <textarea
+                class="about__input"
+                placeholder="What`s on your mind?"
+                cols="40"
+                rows="5"
+              ></textarea>
+              <div class="about__buttons-container">
+                <button type="button">
+                  <img src="./icons/paperclip.svg" alt="paperclip" />
+                </button>
+                <button type="button">
+                  <img src="./icons/image.svg" alt="image" />
+                </button>
+                <button type="button">
+                  <img src="./icons/film.svg" alt="film" />
+                </button>
+                <button type="button">
+                  <img src="./icons/send.svg" alt="send" />
+                </button>
+              </div>
+            </label>
+          </form>
+        </section>
+        <aside class="aside-bar">
+          <div>ASIDE BLOCK</div>
+        </aside>
+        <footer></footer>
+      </main>
+    </div>
+  </body>
+</html>
