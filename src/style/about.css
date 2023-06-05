@@ -40,8 +40,9 @@
     font-size: 1.5rem;
 }
 .about__buttons-container{
+    display: flex;
     position: absolute;
     z-index: 2;
     top:80%;
-    left: 78%
+    left: 75%;
 }

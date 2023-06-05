@@ -14,14 +14,14 @@
     border-right: var(--right-border);
 }
 .logo{
-    width: 5%;
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 10%;
 }
 .header__navs{
     display: flex;
     align-content: center;
-    gap:2rem;
     font-weight: bold;
 }
 .header__navs a:hover{
