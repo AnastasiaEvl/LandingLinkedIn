@@ -42,7 +42,17 @@
 .about__buttons-container{
     display: flex;
     position: absolute;
+    align-items: center;
     z-index: 2;
     top:80%;
     left: 75%;
+    gap:10px;
+}
+input[type=file]{
+    display: none;
+}
+.about__buttons-container-label{
+    background-image: url("src/icons/paperclip.svg");
+    background-size: cover;
+    cursor: pointer;
 }

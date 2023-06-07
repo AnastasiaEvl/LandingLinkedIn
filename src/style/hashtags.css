@@ -1,0 +1,27 @@
+.hashtags{
+    background-color: var(--background-color-fone);
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 1.6rem;
+    padding-bottom: 1.6rem;
+    text-align: center;
+    border-radius: 4px;
+}
+.hashtags__content{
+    padding-top: 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.8rem;
+}
+.hashtags__content-text{
+    padding: 0.6rem 1rem;
+    background: #E9F0F8;
+    border-radius: 4px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--font-color);
+}
+.hashtags__content-text:hover{
+    background-color: var(--hover-color);
+    color: white;
+}

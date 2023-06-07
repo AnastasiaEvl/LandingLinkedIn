@@ -1,0 +1,39 @@
+.aside__profile{
+    background-color: var(--background-color-fone);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    border-radius: 4px;
+}
+.aside__fone{
+    width: 100%;
+    height: 7rem;
+}
+.aside__avatar{
+    position: absolute;
+    min-width: 100px;
+    top:20%;
+    left:30%;
+    z-index: 2;
+    border: 6px solid white;
+    border-radius: 50%;
+}
+.aside__profile-info{
+    width: 100%;
+    text-align: center;
+    padding: 5rem 1.8rem 2rem;
+    color: var(--font-color);
+}
+.aside__profile-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 0.8rem;
+}
+.aside__profile-icon{
+    filter: grayscale(1);
+    width: 12px;
+}
+.aside__profile-description{
+    font-size: 0.8rem;
+}

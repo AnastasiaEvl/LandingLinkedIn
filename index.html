@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="src/style/reset.css" />
     <link rel="stylesheet" href="src/style/header.css" />
     <link rel="stylesheet" href="src/style/about.css" />
-    <link rel="stylesheet" href="src/style/aside-bar.css" />
+    <link rel="stylesheet" href="src/style/filter.css" />
+    <link rel="stylesheet" href="src/style/content-post.css" />
+    <link rel="stylesheet" href="src/style/aside.css" />
+    <link rel="stylesheet" href="src/style/aside-new-article.css" />
+    <link rel="stylesheet" href="src/style/aside-group.css" />
+    <link rel="stylesheet" href="src/style/hashtags.css" />
     <title>LinkedIn</title>
   </head>
   <body>
@@ -31,11 +36,11 @@
                 src="src/icons/wi-fi.svg"
                 alt="icon"
               />
-              <p>feed</p>
+              feed
             </a>
             <a class="header__link" href="#">
               <img class="header__icon" src="src/icons/users.svg" alt="icon" />
-              <p>network</p>
+              network
             </a>
             <a class="header__link" href="#">
               <img
@@ -43,20 +48,21 @@
                 src="src/icons/briefcase.svg"
                 alt="icon"
               />
-              <p>jobs</p>
+             jobs
             </a>
+
             <a class="header__icon-with-counter" href="#"
-              ><div class="counter"><p class="counter__num">1</p></div>
+              >
               <img
                 class="header__icon"
                 src="src/icons/message.svg"
                 alt="icon"
               />
-              <p>chat</p></a
+              chat <div class="counter"><p class="counter__num">1</p></div> </a
             >
             <a class="header__link" href="#">
               <img class="header__icon" src="src/icons/bell.svg" alt="icon" />
-              <p>notices</p>
+              notices
             </a>
           </div>
 
@@ -94,16 +100,17 @@
               </div>
             </a>
           </div>
-          <div class="header__navs">
+          <div class="header__navs header__navs--other">
             <a class="header__link" href="#">
               <img class="header__icon" src="src/icons/dots.svg" alt="icon" />
-              <p>other</p></a
+              other</a
             >
           </div>
         </div>
       </header>
       <main class="main">
         <section class="content">
+          <section class="about-section">
           <form class="about">
             <header class="about__header">
               <h1 class="about__header-title">new post</h1>
@@ -117,23 +124,99 @@
               ></textarea>
             </label>
             <div class="about__buttons-container">
-              <button type="button">
+              <label class="about__buttons-container-label"><input type="file" class="input_style"/>
                 <img src="src/icons/paperclip.svg" alt="paperclip" />
-              </button>
-              <button type="button">
+              </label>
+              <label class="about__buttons-container-label"><input type="file" class="input_style" accept="image/*"/>
                 <img src="src/icons/image.svg" alt="image" />
-              </button>
-              <button type="button">
+              </label>
+              <label class="about__buttons-container-label"><input type="file" class="input_style"  accept="video/*"/>
                 <img src="src/icons/film.svg" alt="film" />
-              </button>
-              <button type="button">
+              </label>
+                <button type="button">
                 <img src="src/icons/send.svg" alt="send" />
-              </button>
+                </button>
             </div>
           </form>
+          </section>
+          <section class="filter">
+            <h2 class="filter__title">Sort by:</h2><button class="filter__button">trending <span class="filter__icon">^</span></button>
+          </section>
+          <section class="content-post">
+            <article class="content-post__article">
+              <h1>Ted Bell, Annette Nguyen and Cody Hawkins liked this</h1>
+              <p>
+                What did the Dursleys care if Harry lost his place on the House Quidditch team because he hadn’t practiced all summer? What was it to the Dursleys if Harry went back to school without any of his homework done? The Dursleys were what wizards called Muggles (not a drop of magical blood in their veins).
+              </p>
+            </article>
+            <article class="content-post__article">
+              <h1>Ted Bell, Annette Nguyen and Cody Hawkins liked this</h1>
+              <p>
+                What did the Dursleys care if Harry lost his place on the House Quidditch team because he hadn’t practiced all summer? What was it to the Dursleys if Harry went back to school without any of his homework done? The Dursleys were what wizards called Muggles (not a drop of magical blood in their veins).
+              </p>
+            </article>
+            <article class="content-post__article">
+              <h1>Ted Bell, Annette Nguyen and Cody Hawkins liked this</h1>
+              <p>
+                What did the Dursleys care if Harry lost his place on the House Quidditch team because he hadn’t practiced all summer? What was it to the Dursleys if Harry went back to school without any of his homework done? The Dursleys were what wizards called Muggles (not a drop of magical blood in their veins).
+              </p>
+            </article>
+            <article class="content-post__article">
+              <h1>Ted Bell, Annette Nguyen and Cody Hawkins liked this</h1>
+              <p>
+                What did the Dursleys care if Harry lost his place on the House Quidditch team because he hadn’t practiced all summer? What was it to the Dursleys if Harry went back to school without any of his homework done? The Dursleys were what wizards called Muggles (not a drop of magical blood in their veins).
+              </p>
+            </article>
+
+          </section>
         </section>
-        <aside class="aside-bar">
-          <div>ASIDE BLOCK</div>
+
+
+        <aside class="aside">
+          <section class="aside__profile">
+            <img  class='aside__fone' src="./src/assets/aside-fone.png" alt="fone"/>
+            <img class="aside__avatar" src="./src/icons/profile.svg"  alt="avatar"/>
+            <div class="aside__profile-info">
+            <h2 class="aside__profile-name">Dmitry Kargaev <img class="aside__profile-icon" src="src/icons/icon-linkedIn.svg" alt="linkedin"></h2>
+            <p class="aside__profile-description">Freelance UX/UI designer, 80+ projects in web design, mobile apps (iOS & android) and creative projects. Open to offers.</p></div>
+          </section>
+          <section class="aside-new-article">
+            <button class="aside-new-article__button" type="button">
+             write new article
+            </button>
+          </section>
+          <section class="aside-groups">
+            <header class="aside-groups__header">
+              <a href="#"><h2>
+              my groups
+              </h2></a>
+            <a href="#" class="aside-groups__link">edit list</a></header>
+            <div class="aside-groups__content">
+            <a href="#" class="aside-groups__content-link"><img class="aside-groups__label" src="./src/icons/moscow-university-label.svg" alt="label">Moscow State
+              Linguistical
+              University</a>
+            <a href="#" class="aside-groups__content-link"><img class="aside-groups__label" src="./src/icons/freelance-lable.svg" alt="label">Digital freelancers
+              group</a>
+            <a href="#" class="aside-groups__content-link"><img class="aside-groups__label" src="./src/icons/design-assocoates-label.svg" alt="label">Interaction
+              design
+              association</a>
+            </div>
+            <a href="#" class="aside-groups__link">show all(8)</a>
+          </section>
+          <section class="hashtags">
+            <header class="aside-groups__header"><h2>followed hashtags</h2></header>
+            <div class="hashtags__content">
+              <a href="#" class="hashtags__content-text">#work</a>
+              <a href="#" class="hashtags__content-text">#business</a>
+              <a href="#" class="hashtags__content-text">#hr</a>
+              <a href="#" class="hashtags__content-text">#userinterface</a>
+              <a href="#" class="hashtags__content-text">#digital</a>
+              <a href="#" class="hashtags__content-text">#userexperience</a>
+              <a href="#" class="hashtags__content-text">#ux</a>
+              <a href="#" class="hashtags__content-text">#ui</a>
+              <a href="#" class="hashtags__content-text">#freelance</a>
+            </div>
+          </section>
         </aside>
         <footer></footer>
       </main>
